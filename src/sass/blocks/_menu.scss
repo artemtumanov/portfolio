@@ -76,6 +76,7 @@
             }
         }
         &::before {
+            content: '';
             position: absolute;
             top: 10px;
             left: -35px;

@@ -1,0 +1,64 @@
+.me {
+    padding: 120px 0;
+}
+.about {
+    display: grid;
+    grid-template: 240px 360px / 400px 570px;
+    column-gap: 70px;
+    &__my-photo {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    &__info {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    &__title {
+        padding-top: 6px;
+        padding-left: 10px;
+    }
+    &__name {
+        margin-top: 6px;
+    }
+    &__line {
+        width: 60px;
+        height: 3px;
+        background-color: $main-color;
+    }
+    &__descr {
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: 20px;
+    }
+    &__services {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: grid;
+        grid-template: 116px 116px / 260px 260px;
+        gap: 20px 50px;
+    }
+    &__service {
+        padding-left: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        svg {
+            display: block;
+            padding-top: 15px;
+        }
+    }
+
+    &__service-me {
+        width: 200px;
+    }
+    &__service-title {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &__service-descr {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
