@@ -1,0 +1,11 @@
+.price {
+    padding-top: 60px;
+    text-align: center;
+    .title {
+        &::before {
+            left: 50%;
+            transform: translateX(-50%);
+            top: -6px;
+        }
+    }
+}
